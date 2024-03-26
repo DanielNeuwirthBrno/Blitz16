@@ -1,0 +1,84 @@
+ 
+ GAME DESCRIPTION:
+ -----------------
+ 
+ A plane moves across the screen at a steady speed. When the plane reaches the end of the screen it moves to the other side and drops down one line, with the speed increasing each time the plane drops a line.
+ 
+ Below is a cityscape composed of blocks. The player has to drop bombs from the plane, and each bomb which hits a building removes one block.
+ 
+ As the plane descends it risks hitting any remaining blocks so priority has to be given to bombing the tallest "buildings". The game is completed when all blocks are removed.
+ 
+ 
+ MAIN MENU:
+ ----------
+ 
+ random shuffle         randomly generated buildings
+ load from file         buildings (city) loaded from a file
+ settings               game settings
+ help                   this help-page
+ exit                   exit game
+ 
+ 
+ GAME COMMANDS:
+ --------------
+ 
+ start game             press any key
+ release bomb           down arrow key
+ decrease speed         left arrow key
+ increase speed         right arrow key		
+ pause/unpause game     F10 key
+ exit game              press q
+ back to main menu      F10 key
+ (after game is over)
+ 
+ 
+ GAMEBOARD:
+ ----------
+ [from upper-left to upper-right corner]
+ 
+ type of game (random shuffle, file selection)
+ current X coordinate (row)
+ current Y coordinate (column)
+ number of bombs available
+ number of remaining storeys
+ 
+ 
+ SETTINGS:
+ ---------
+ 
+ game speed                  the lower the value, the faster the game
+ speed of dropped bombs      derived from speed of your plane
+ interval between bombs      number of bombs in a continuous streak
+ number of bombs available   bombs-to-storeys ratio
+ density of buildings        the higher the value, the more "bricks"
+ max. height of building     the higher the value, the less height
+ width of town               the lower the value, the greater width
+                             (lower limits = 1 row, 2 columns)
+ back to default values
+ return back to main menu
+ 
+ 
+ CHANGE SETTINGS:
+ ----------------
+ 
+ decrease value         left arrow key, down arrow key
+ increase value         right arrow key, up arrow key
+ range (bounds)         in square brackets
+ currently selected     denoted by asterisk (*)
+ confirm choice         press any key
+ 
+ 
+ LICENSE:
+ --------
+ This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+ 
+ 
+ PROGRAMMING ENVIRONMENT:
+ ------------------------
+ This software has been developed using C++ programming toolkit Qt (v5.3).
+ 
+ This software makes use of the public domain curses programming library PDCurses (v3.4).
